@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boklista</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <h1>📚 My book list 📚</h1>
+
+    <form id="bookForm">
+      <input type="text" id="title" placeholder="title" required />
+      <input type="text" id="author" placeholder="author" required />
+      <button>Lägg till bok</button>
+    </form>
+
+    <hr />
+
+    <label>Filter:</label>
+    <select id="filter">
+      <option value="all">Alla</option>
+      <option value="favorites">Endast favoriter</option>
+    </select>
+
+    <label>Sortera:</label>
+    <select id="sort">
+      <option value="title-asc">title A–Ö</option>
+      <option value="title-desc">title Ö–A</option>
+      <option value="author-asc">author A–Ö</option>
+      <option value="author-desc">author Ö–A</option>
+      <option value="newest">Nyast först</option>
+      <option value="oldest">Äldst först</option>
+    </select>
+
+    <ul id="bookList"></ul>
+
+    <script src="main.js" defer></script>
+    <script src="./module/firebaseconfig.js"></script>
+  </body>
+</html>

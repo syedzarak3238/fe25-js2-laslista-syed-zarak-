@@ -1,0 +1,149 @@
+/* body {
+  font-family: Arial;
+  max-width: 600px;
+  margin: auto;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.favorite {
+  background: #fff6cc;
+}
+
+button {
+  margin-left: 5px;
+}
+
+.favorite {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.favorite {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.favorite button {
+  color: gold;
+} */
+
+/* 
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #f4f6fb, #e8ecf4);
+
+  /* Center EVERYTHING as a group */
+  display: grid;
+  place-items: center;
+}
+
+/* Create a visual container WITHOUT HTML */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* Group all content */
+body > * {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+/* Selects */
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Book list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: white;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Favorite books (your JS underline logic) */
+li[style*="underline"] {
+  background: #fff7cc;
+}
+
+/* Icon buttons */
+li button {
+  background: transparent;
+  color: #333;
+  font-size: 16px;
+}
+
+li button:hover {
+  color: #eab308;
+} 
